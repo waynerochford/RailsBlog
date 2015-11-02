@@ -1,0 +1,15 @@
+<p>
+ <b>Blog Title:</b>
+ <%= @blog.blog_title %>
+</p>
+<!-- Display posts of a blog -->
+<h2>Posts</h2>
+<% @blog.posts.each do |post| %>
+ <p>
+ <b>Message:</b>
+ <%= post.post_message %>
+ </p>
+<% end %>
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blogs_path %> |
+<%= link_to 'Show Posts', blog_posts_path(@blog) %>

@@ -1,0 +1,15 @@
+<h1>Posts in <%= @blog.blog_title %></h1>
+<table>
+<% for post in @posts %>
+ <tr>
+ <td><%= post.post_message %></td>
+ <td><%= link_to 'Show', blog_post_path(@blog, post) %></td>
+ <td><%= link_to 'Edit', edit_blog_post_path(@blog, post) %></td>
+ <td><%= link_to 'Destroy', blog_post_path(@blog, post), :confirm =>
+'Are you sure?', :method => :delete %></td>
+ </tr>
+<% end %>
+</table>
+<br />
+<%= link_to 'New Post', new_blog_post_path(@blog) %>
+<%= link_to 'Back to Blog', @blog %>
