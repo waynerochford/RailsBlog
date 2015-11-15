@@ -1931,3 +1931,175 @@ Processing by BlogsController#index as HTML
   [1m[36mBlog Load (0.3ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
   Rendered blogs/index.html.erb within layouts/application (3.6ms)
 Completed 200 OK in 80ms (Views: 78.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blogs" for ::1 at 2015-11-03 15:15:11 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (9.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogsController#index as HTML
+  [1m[35mBlog Load (17.7ms)[0m  SELECT "blogs".* FROM "blogs"
+  Rendered blogs/index.html.erb within layouts/application (53.8ms)
+Completed 200 OK in 789ms (Views: 733.2ms | ActiveRecord: 18.3ms)
+
+
+Started GET "/assets/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-03 15:15:13 +0000
+
+
+Started GET "/assets/blog.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-03 15:15:13 +0000
+
+
+Started GET "/assets/post.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-03 15:15:13 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-03 15:15:13 +0000
+
+
+Started GET "/assets/scaffolds.self-02c828454f95b9a791a32b67bf1a8da802744cc7095fa68bdd6e0c41dcb9bc7f.css?body=1" for ::1 at 2015-11-03 15:15:13 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-03 15:15:13 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-03 15:15:13 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-03 15:15:13 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-03 15:15:13 +0000
+
+
+Started GET "/assets/blog.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-03 15:15:13 +0000
+
+
+Started GET "/assets/blogs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-03 15:15:13 +0000
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-03 15:15:13 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-03 15:15:13 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-03 15:15:13 +0000
+
+
+Started GET "/blogs/5" for ::1 at 2015-11-03 15:15:16 +0000
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."blog_id" = ?  [["blog_id", 5]]
+  Rendered blogs/show.html.erb within layouts/application (52.8ms)
+Completed 200 OK in 198ms (Views: 128.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/blogs" for ::1 at 2015-11-03 15:15:18 +0000
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 79ms (Views: 77.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs.json" for ::1 at 2015-11-03 15:15:38 +0000
+Processing by BlogsController#index as JSON
+  [1m[35mBlog Load (0.3ms)[0m  SELECT "blogs".* FROM "blogs"
+  Rendered blogs/index.json.jbuilder (17.5ms)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for ::1 at 2015-11-06 12:32:02 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogsController#index as HTML
+  [1m[35mBlog Load (0.6ms)[0m  SELECT "blogs".* FROM "blogs"
+  Rendered blogs/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 692ms (Views: 655.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs/3" for ::1 at 2015-11-06 12:32:08 +0000
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."blog_id" = ?  [["blog_id", 3]]
+  Rendered blogs/show.html.erb within layouts/application (50.6ms)
+Completed 200 OK in 162ms (Views: 149.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/blogs" for ::1 at 2015-11-06 12:32:17 +0000
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (97.9ms)
+Completed 200 OK in 176ms (Views: 174.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for ::1 at 2015-11-15 21:39:12 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (10.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogsController#index as HTML
+  [1m[35mBlog Load (17.9ms)[0m  SELECT "blogs".* FROM "blogs"
+  Rendered blogs/index.html.erb within layouts/application (46.5ms)
+Completed 200 OK in 1164ms (Views: 1094.0ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/assets/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-15 21:39:15 +0000
+
+
+Started GET "/assets/post.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-15 21:39:15 +0000
+
+
+Started GET "/assets/blog.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-15 21:39:15 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-15 21:39:15 +0000
+
+
+Started GET "/assets/scaffolds.self-02c828454f95b9a791a32b67bf1a8da802744cc7095fa68bdd6e0c41dcb9bc7f.css?body=1" for ::1 at 2015-11-15 21:39:15 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-15 21:39:15 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-15 21:39:15 +0000
+
+
+Started GET "/assets/blog.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-15 21:39:15 +0000
+
+
+Started GET "/assets/blogs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-15 21:39:15 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-15 21:39:15 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-15 21:39:15 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-15 21:39:15 +0000
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-15 21:39:15 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-15 21:39:15 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-15 21:39:16 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-15 21:39:16 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-15 21:39:16 +0000
+
+
+Started GET "/blogs/3" for ::1 at 2015-11-15 21:39:35 +0000
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."blog_id" = ?  [["blog_id", 3]]
+  Rendered blogs/show.html.erb within layouts/application (67.7ms)
+Completed 200 OK in 226ms (Views: 158.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/blogs" for ::1 at 2015-11-15 21:39:37 +0000
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 179ms (Views: 177.7ms | ActiveRecord: 0.3ms)
